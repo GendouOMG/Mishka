@@ -1,0 +1,26 @@
+// WTF
+.zigzag-border{
+	padding: 0;
+	margin: 35px 0;
+
+	display: flex;
+
+	width: auto;
+	height: 6px;
+	
+	background: url("../img/zigzag-line.png") center;
+	background-size: cover;
+}
+// End WTF
+
+@media (min-width: $tablet-width) {
+	.zigzag-border {
+		width: auto;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.zigzag-border {
+		width: auto;
+	}
+}

@@ -1,0 +1,85 @@
+.banner {
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	width: $mobile-width;
+	height: 490px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+	background: url("../img/hero-mobile.jpg") top center no-repeat;
+}
+
+
+.banner__delivery{
+	display: none;
+}
+
+.banner__slogan {
+	margin: 0;
+	padding: 70px 0 0 0;
+
+	// display: flex;
+	width: 300px;
+
+	text-decoration: none;
+	text-align: center;
+	font-size: 27px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.banner__options{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: $mobile-width;
+	height: auto;
+
+	list-style: none;
+}
+
+.banner__option-link{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	width: $mobile-width;
+	height: 100px;
+
+	background-color: #63d1bb;
+
+	text-decoration: none;
+	text-align: center;
+	font-size: 19px;
+	line-height: 24px;
+	font-weight: 700;
+	// text-transform: uppercase;
+	color: #ffffff;
+}
+
+
+.banner__option-name{
+	margin: 0;
+	padding: 0 0 0 35px;
+}
+
+.banner__option-icon{
+	margin: 0;
+	padding: 0 35px 0 0;
+}
+
+// *** MODS ***
+.banner__option-link--last {
+	background-color: #56c3b2;
+}
+// ** END OF MODS ***
