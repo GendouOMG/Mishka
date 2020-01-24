@@ -1,0 +1,148 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta
+			name="viewport"
+			content="width=device-width,initial-scale=1">
+		<link href="css/style.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	</head>
+
+	<body>
+		<section class="central-location">
+			<header class="main-head">
+				<nav class="main-head__menu main-head__menu--closed">
+					<button class="main-head__toggle" type="button"></button>
+					<ul class="main-menu">
+						<li class="main-menu__item main-menu__item--logo main-menu__item--active">
+							<a class="main-menu__link main-menu__link--logo" href="index.html">
+								<img class="main-menu__mobile-logo" src="img/mishka-logo-mobile.png">
+								<img class="main-menu__tablet-logo" src="img/mishka-logo-tablet.png">
+								<img class="main-menu__desktop-logo" src="img/mishka-logo-desktop.png">
+							</a>
+						</li>
+						<li class="main-menu__item main-menu__item--сatalog">
+							<a class="main-menu__link" href="#">
+								<span class="main-menu__icon"></span> <p class="main-menu__item-name main-menu__item-name--catalog">Каталог товаров </p>
+							</a>
+						</li>
+						<li class="main-menu__item main-menu__item--order">
+							<a class="main-menu__link" href="#">
+								<span class="main-menu__icon"></span> <p class="main-menu__item-name main-menu__item-name--order">Вязание на заказ </p>
+							</a>
+						</li>
+						<li class="main-menu__item main-menu__item--search">
+							<a class="main-menu__link" href="#">
+								<span class="main-menu__icon main-menu__icon--search"></span> <p class="main-menu__item-name main-menu__item-name--search">Поиск по сайту</p>
+							</a>
+						</li>
+						<li class="main-menu__item main-menu__item--сart">
+							<a class="main-menu__link main-menu__link" href="#">
+								<span class="main-menu__icon main-menu__icon--cart"></span> <p class="main-menu__item-name main-menu__item-name--cart">Корзина: пока пуста</p>
+							</a>
+						</li>
+						<li class="main-menu__item main-menu__item--new-goods main-menu__item--not-active">
+							<a class="main-menu__link" href="#">
+								<span class="main-menu__icon"></span> <p class="main-menu__item-name">Новые поступления </p>
+							</a>
+						</li>
+						<li class="main-menu__item main-menu__item--sale main-menu__item--not-active">
+							<a class="main-menu__link" href="#">
+								<span class="main-menu__icon"></span> <p class="main-menu__item-name"> Распродажа </p>
+							</a>
+						</li>
+						<li class="main-menu__item main-menu__item--delivery main-menu__item--not-active">
+								<span class="main-menu__icon"></span> <p class="main-menu__item-name"> Бесплатная доставка по России </p>
+						</li>
+					</ul>				
+				</nav>
+			</header>
+			
+			<section class="catalog">
+				<div class="catalog__banner">
+					<h2 class="catalog__headline">Каталог товаров</h2>
+					<div class="catalog__zigzag"></div>
+				</div>
+				<ul class="catalog__items">
+					<li class="catalog__unit">
+						<img class="catalog__unit-image catalog__unit-image--mobile" src="img/photo-1-mobile.jpg">
+						<img class="catalog__unit-image catalog__unit-image--tablet" src="img/photo-1-tablet.jpg">
+						<img class="catalog__unit-image catalog__unit-image--desktop" src="img/photo-1-desktop.jpg">
+						<div class="catalog__unit-text">
+							<p class="catalog__unit-name">Зайчик-попрыгайчик</p>
+							<p class="catalog__unit-size">Рост 30 см, вес 200 г</p>
+							<p class="catalog__unit-price">1 200 руб.<a class="catalog__unit-order" href="#"></a></p>
+						</div>
+					</li>
+					<li class="catalog__unit">
+						<img class="catalog__unit-image catalog__unit-image--mobile" src="img/photo-2-mobile.jpg">
+						<img class="catalog__unit-image catalog__unit-image--tablet" src="img/photo-2-tablet.jpg">
+						<img class="catalog__unit-image catalog__unit-image--desktop" src="img/photo-2-desktop.jpg">
+						<div class="catalog__unit-text">
+							<p class="catalog__unit-name">Корзинка для белья</p>
+							<p class="catalog__unit-size">Диаметр 15 см, высота 10 см</p>
+							<p class="catalog__unit-price">690 руб. <a class="catalog__unit-order" href="#"></a></p>
+						</div>
+					</li>
+					<li class="catalog__unit">
+						<img class="catalog__unit-image catalog__unit-image--mobile" src="img/photo-3-mobile.jpg">
+						<img class="catalog__unit-image catalog__unit-image--tablet" src="img/photo-3-tablet.jpg">
+						<img class="catalog__unit-image catalog__unit-image--desktop" src="img/photo-3-desktop.jpg">
+						<div class="catalog__unit-text">
+							<p class="catalog__unit-name">Большая корзинка для игрушек</p>
+							<p class="catalog__unit-size">Диаметр 30 см, высота 30 см</p>
+							<p class="catalog__unit-price">1 500 руб. <a class="catalog__unit-order" href="#"></a></p>
+						</div>
+					</li>
+				</ul>				
+			</section>
+			
+			<div class="сreation-process">
+				<h3 class="сreation-process__headline">Процесс производства</h3>
+				<a class="сreation-process__video" href="#"></a>
+				<p class="сreation-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+				<button class="сreation-process__order">Сделать заказ</button>
+			</div>
+
+			<footer class="contacts">
+				<a class="contacts__logo"> <img class="contacts__logo-picture" src="img/logo-footer.png" alt="логотип"> </a>
+				<ul class="contacts__social-networks">
+					<li class="contacts__icon">
+						<a href="#" class="contacts__icon-contain contacts__icon-contain--instagram"> </a>
+					</li>
+					<li class="contacts__icon">
+						<a href="#" class="contacts__icon-contain contacts__icon-contain--facebook"> </a>
+					</li>
+					<li class="contacts__icon">
+						<a href="#" class="contacts__icon-contain contacts__icon-contain--twitter"> </a>
+					</li>
+				</ul>
+				<span class="contacts__border"></span>
+				<p class="contacts__creator">
+					Разработано &nbsp;
+					<a href="#" class="contacts__html-icon"></a>
+				</p>
+			</footer>
+		</section>
+
+		<script type="text/javascript">
+			var head__menu = document.querySelector('.main-head__menu');
+			var menu__toggle = document.querySelector('.main-head__toggle');
+
+			// head__menu.classList.remove;
+
+			menu__toggle.addEventListener('click', function(){
+				if (head__menu.classList.contains('main-head__menu--closed'))
+				{
+					head__menu.classList.remove('main-head__menu--closed');
+					head__menu.classList.add('main-head__menu--opened');
+				}
+				else
+				{
+					head__menu.classList.add('main-head__menu--closed');
+					head__menu.classList.remove('main-head__menu--opened');
+				}
+			});
+		</script>
+	</body>
+</html>

@@ -11,77 +11,102 @@
 	<body>
 		<section class="central-location">
 			<header class="main-head">
-				<nav class="main-head__menu">
+				<nav class="main-head__menu main-head__menu--closed">
+					<button class="main-head__toggle" type="button"></button>
 					<ul class="main-menu">
-						<li class="main-menu__item main-menu__item--logo">
-							<img class="main-menu__logo" src="img/mishka-logo-mobile.png">
-							<span class="main-menu__close"></span>
+						<li class="main-menu__item main-menu__item--logo main-menu__item--active">
+							<a class="main-menu__link main-menu__link--logo" href="#">
+								<img class="main-menu__mobile-logo" src="img/mishka-logo-mobile.png">
+								<img class="main-menu__tablet-logo" src="img/mishka-logo-tablet.png">
+								<img class="main-menu__desktop-logo" src="img/mishka-logo-desktop.png">
+							</a>
 						</li>
 						<li class="main-menu__item main-menu__item--сatalog">
-							<a class="main-menu__link" href="#"> <span class="main-menu__icon"></span> <p class="main-menu__item-name">Каталог товаров </p> </a>
+							<a class="main-menu__link" href="catalog.html">
+								<span class="main-menu__icon"></span> <p class="main-menu__item-name main-menu__item-name--catalog">Каталог товаров </p>
+							</a>
 						</li>
 						<li class="main-menu__item main-menu__item--order">
-							<a class="main-menu__link" href="#"> <span class="main-menu__icon"></span> <p class="main-menu__item-name">Вязание на заказ </p> </a>
+							<a class="main-menu__link" href="#">
+								<span class="main-menu__icon"></span> <p class="main-menu__item-name main-menu__item-name--order">Вязание на заказ </p>
+							</a>
 						</li>
 						<li class="main-menu__item main-menu__item--search">
-							<a class="main-menu__link" href="#"> <span class="main-menu__icon main-menu__icon--search"></span> <p class="main-menu__item-name main-menu__item-name--search">Поиск по сайту</p> </a>
+							<a class="main-menu__link" href="#">
+								<span class="main-menu__icon main-menu__icon--search"></span> <p class="main-menu__item-name main-menu__item-name--search">Поиск по сайту</p>
+							</a>
 						</li>
 						<li class="main-menu__item main-menu__item--сart">
-							<a class="main-menu__link" href="#"> <span class="main-menu__icon main-menu__icon--cart"></span> <p class="main-menu__item-name">Корзина: пока пуста</p> </a>
+							<a class="main-menu__link main-menu__link" href="#">
+								<span class="main-menu__icon main-menu__icon--cart"></span> <p class="main-menu__item-name main-menu__item-name--cart">Корзина: пока пуста</p>
+							</a>
 						</li>
-						<li class="main-menu__item main-menu__item--new-goods">
-							<a class="main-menu__link" href="#"> <span class="main-menu__icon"></span> <p class="main-menu__item-name">Новые поступления </p></a>
+						<li class="main-menu__item main-menu__item--new-goods main-menu__item--not-active">
+							<a class="main-menu__link" href="#">
+								<span class="main-menu__icon"></span> <p class="main-menu__item-name">Новые поступления </p>
+							</a>
 						</li>
-						<li class="main-menu__item main-menu__item--sale">
-							<a class="main-menu__link" href="#"> <span class="main-menu__icon"></span> <p class="main-menu__item-name"> Распродажа </p></a>
+						<li class="main-menu__item main-menu__item--sale main-menu__item--not-active">
+							<a class="main-menu__link" href="#">
+								<span class="main-menu__icon"></span> <p class="main-menu__item-name"> Распродажа </p>
+							</a>
+						</li>
+						<li class="main-menu__item main-menu__item--delivery main-menu__item--not-active">
+								<span class="main-menu__icon"></span> <p class="main-menu__item-name"> Бесплатная доставка по России </p>
 						</li>
 					</ul>				
 				</nav>
 				<div class="banner">
 
-						<span class="banner__delivery">Бесплатная доставка по России</span>
-						<p class="banner__slogan"> Милые штуки ручной <br> работы для дома </p>
+					<!-- <span class="banner__delivery">Бесплатная доставка по России</span> -->
+					<p class="banner__slogan"> Милые штуки ручной <br> работы для дома </p>
 					
 					<ul class="banner__options">
 						<li class="banner__option">
 							<a class="banner__option-link" href="#">
 								<p class="banner__option-name">Предметы <br> интерьера </p>
-								<span class="banner__option-icon"></span></a>
+								<span class="banner__option-icon banner__option-icon--interior"></span></a>
 						</li>
 						<li class="banner__option">
 							<a class="banner__option-link banner__option-link--last" href="#">
 								<p class="banner__option-name"> Детские <br> игрушки </p>
-								<span class="banner__option-icon"></span></a>
+								<span class="banner__option-icon banner__option-icon--toy"></span></a>
 						</li>
-					</ul>			
+					</ul>
+					<div class="banner__zigzag"></div>			
 				</div>
 			</header>
 
 			<section class="best-product">
-				<h3 class="best-product__name">Вязаные корзинки</h3>
-				<h2 class="best-product__headline">Товар недели</h2>
-				<p class="best-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+				<div class="best-product__full-headline">
+					<h3 class="best-product__name">Вязаные корзинки</h3>
+					<h2 class="best-product__headline">Товар недели</h2>
+				</div>
 
-				<ul class="best-product__features">
-					<li class="best-product__features-item">
-						<span class="best-product__features-name">Цвет:</span>
-						<span class="best-product__features-value">«Тиффани»/серый</span>
-					</li>
-					<li class="best-product__features-item">
-						<span class="best-product__features-name">Диаметр:</span>
-						<span class="best-product__features-value">25 см</span>
-					</li>
-					<li class="best-product__features-item">
-						<span class="best-product__features-name">Высота:</span>
-						<span class="best-product__features-value">15 см</span>
-					</li>
-				</ul>
+				<div class="best-product__left-column">
+					<p class="best-product__description">Экологически чистая пряжа, <br> ручная работа. Доступны в шести <br> расцветках и трех размерах.</p>
+					<ul class="best-product__features">
+						<li class="best-product__features-item">
+							<span class="best-product__features-name">Цвет:</span>
+							<span class="best-product__features-value">«Тиффани»/серый</span>
+						</li>
+						<li class="best-product__features-item">
+							<span class="best-product__features-name">Диаметр:</span>
+							<span class="best-product__features-value">25 см</span>
+						</li>
+						<li class="best-product__features-item">
+							<span class="best-product__features-name">Высота:</span>
+							<span class="best-product__features-value">15 см</span>
+						</li>
+					</ul>
+					<p class="best_product__cost">Цена: 990 руб.</p>
+					<a class="best_product__order" href="#">Заказать</a>
+				</div>
+			
+				<!-- <img class="best_product__photo" alt="фото товара недели" src="img/triple-set-mobile.jpg"> -->
 
-				<img class="best_product__photo" alt="фото товара недели" src="img/triple-set-mobile.jpg">
-
-				<p class="best_product__cost">Цена: 990 руб.</p>
-
-				<a class="best_product__order" href="#">Заказать</a>	
+				<!-- <p class="best_product__cost">Цена: 990 руб.</p>
+				<a class="best_product__order" href="#">Заказать</a> -->
 			</section>
 
 			<span class="zigzag-border"></span>
@@ -141,12 +166,13 @@
 						<p class="our-contacts__extension">г. Санкт-Петербург,<br>ул. Большая Конюшенная, <br> д. 19/8, офис 101</p>
 					</li>
 				</ul>
+				<span class="contacts__flag-icon"></span>
 				<div class="our-contacts__map"></div>
 				<p class="our-contacts__feedback-button">Напишите нам</p>
 			</section>
 
 			<footer class="contacts">
-				<a class="contacts__logo"> </a>
+				<a class="contacts__logo"> <img class="contacts__logo-picture" src="img/logo-footer.png" alt="логотип"> </a>
 				<ul class="contacts__social-networks">
 					<li class="contacts__icon">
 						<a href="#" class="contacts__icon-contain contacts__icon-contain--instagram"> </a>
@@ -158,12 +184,32 @@
 						<a href="#" class="contacts__icon-contain contacts__icon-contain--twitter"> </a>
 					</li>
 				</ul>
-				<span class="contacts-border"></span>
+				<span class="contacts__border"></span>
 				<p class="contacts__creator">
 					Разработано &nbsp;
 					<a href="#" class="contacts__html-icon"></a>
 				</p>
 			</footer>
 		</section>
+
+		<script type="text/javascript">
+			var head__menu = document.querySelector('.main-head__menu');
+			var menu__toggle = document.querySelector('.main-head__toggle');
+
+			// head__menu.classList.remove;
+
+			menu__toggle.addEventListener('click', function(){
+				if (head__menu.classList.contains('main-head__menu--closed'))
+				{
+					head__menu.classList.remove('main-head__menu--closed');
+					head__menu.classList.add('main-head__menu--opened');
+				}
+				else
+				{
+					head__menu.classList.add('main-head__menu--closed');
+					head__menu.classList.remove('main-head__menu--opened');
+				}
+			});
+		</script>
 	</body>
 </html>

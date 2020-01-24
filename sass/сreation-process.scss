@@ -1,0 +1,251 @@
+.сreation-process {
+	margin: 30px auto;
+	padding: 0;
+
+	width: 260px;
+	height: auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	border: 1px solid #ececec;
+}
+
+.сreation-process__headline {
+	margin: 25px 30px;
+	padding: 0 0 0 60px;
+
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
+	flex-grow: 0;
+
+	text-decoration: none;
+	text-align: left;
+	font-size: 17px;
+	line-height: 24px;
+	font-weight: 700;
+	// text-transform: uppercase;
+	color: #444444;
+
+	background: url("../img/video.png") center left no-repeat;
+	background-size: 32px 22px;
+}
+
+
+
+.сreation-process__description {
+	margin: 30px;
+	padding: 0;
+
+	text-decoration: none;
+	text-align: left;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 500;
+	// text-transform: uppercase;
+	color: #444444;
+}
+
+.сreation-process__order {
+	margin: 0 0 30px 0;
+	padding: 20px 25px;
+
+	background-color: #fff;
+
+	text-decoration: none;
+	text-align: center;
+	font-size: 17px;
+	line-height: 17px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #444444;
+
+	border: 2px solid #444444;
+}
+
+.сreation-process__video {
+	width: 260px;
+	height: 150px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background: url("../img/playVideo.jpg") top center no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+	.сreation-process {
+		margin: 0 auto 60px auto;
+		padding: 0;
+
+		width: 668px;
+		height: auto;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: initial;
+		align-items: initial;
+
+		border: 1px solid #ececec;
+	}
+
+	.сreation-process__headline {
+		margin: 40px;
+		padding: 0 0 0 60px;
+
+		display: flex;
+		align-items: center;
+		flex-shrink: 0;
+		flex-grow: 0;
+
+		text-decoration: none;
+		text-align: left;
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: 700;
+		// text-transform: uppercase;
+		color: #444444;
+
+		background: url("../img/video.png") center left no-repeat;
+		background-size: 32px 22px;
+	}
+
+
+
+	.сreation-process__description {
+		margin: 0 40px;
+		padding: 0;
+
+		text-decoration: none;
+		text-align: left;
+		font-size: 15px;
+		line-height: 30px;
+		font-weight: 500;
+		// text-transform: uppercase;
+		color: #444444;
+	}
+
+	.сreation-process__order {
+		margin: 40px;
+		padding: 20px 25px;
+
+		background-color: #fff;
+
+		text-decoration: none;
+		text-align: center;
+		font-size: 17px;
+		line-height: 17px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #444444;
+
+		border: 2px solid #444444;
+	}
+
+	.сreation-process__video {
+		width: 668px;
+		height: 455px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		order: -1;
+
+		background: url("../img/playVideo-tablet.jpg") top center no-repeat;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.сreation-process {
+		margin: 0 auto 60px auto;
+		padding: 0;
+
+		width: 1050px;
+		height: 455px;
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: initial;
+		align-items: initial;
+
+		border: 1px solid #ececec;
+	}
+
+	.сreation-process__headline {
+		margin: 50px 60px 0 80px;
+		padding: 0 0 0 60px;
+
+		width: 230px;
+
+		display: flex;
+		align-items: center;
+		flex-shrink: 0;
+		flex-grow: 0;
+
+		text-decoration: none;
+		text-align: left;
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: 700;
+		// text-transform: uppercase;
+		color: #444444;
+
+		background: url("../img/video.png") center left no-repeat;
+		background-size: 32px 22px;
+	}
+
+
+
+	.сreation-process__description {
+		margin: 50px 60px 0 80px;
+		padding: 0;
+
+		width: 230px;
+
+		text-decoration: none;
+		text-align: left;
+		font-size: 15px;
+		line-height: 30px;
+		font-weight: 500;
+		// text-transform: uppercase;
+		color: #444444;
+	}
+
+	.сreation-process__order {
+		margin: 50px 60px 0 80px;
+		padding: 20px 25px;
+
+		width: 230px;
+
+		background-color: #fff;
+
+		text-decoration: none;
+		text-align: center;
+		font-size: 17px;
+		line-height: 17px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #444444;
+
+		border: 2px solid #444444;
+	}
+
+	.сreation-process__video {
+		width: 668px;
+		height: 455px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		order: -1;
+
+		background: url("../img/playVideo-tablet.jpg") top center no-repeat;
+	}
+}

@@ -9,6 +9,9 @@
 	align-items: center;
 	justify-content: space-between;
 
+	position: relative;
+	// z-index: -1;
+	
 	background: url("../img/hero-mobile.jpg") top center no-repeat;
 }
 
@@ -29,7 +32,7 @@
 	font-size: 27px;
 	line-height: 30px;
 	font-weight: 700;
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	color: #000000;
 }
 
@@ -44,6 +47,12 @@
 	height: auto;
 
 	list-style: none;
+}
+
+.banner__option{
+	margin: 0;
+	padding: 0;
+	flex-grow: 1;
 }
 
 .banner__option-link{
@@ -71,15 +80,333 @@
 .banner__option-name{
 	margin: 0;
 	padding: 0 0 0 35px;
+
 }
 
 .banner__option-icon{
-	margin: 0;
-	padding: 0 35px 0 0;
+	margin: 0 27px 0 0;
+	padding: 0;
+
+	width: 62px;
+	height: 62px;
+
+	// background: url("../img/toy.png") center center no-repeat;
+	opacity: 0.5;
+
+}
+
+.banner__zigzag{
+	display: none;
 }
 
 // *** MODS ***
 .banner__option-link--last {
 	background-color: #56c3b2;
 }
+
+.banner__option-icon--interior{
+	background: url("../img/interior.png") center center no-repeat;
+}
+
+.banner__option-icon--toy{
+	background: url("../img/toy.png") center center no-repeat;
+}
 // ** END OF MODS ***
+
+// *** HOVERS AND ANOTHER ***
+.banner__option-link:hover {
+	background-color: #59d5bc;
+}
+.banner__option-link:active {
+	background-color: #59d5bc;
+	color: #8be2d0;
+}
+
+.banner__option-link--last:hover {
+	background-color: #46c1ae;
+
+}
+.banner__option-link--last:active {
+	background-color: #46c1ae;
+	color: #7ed4c6;
+}
+
+.banner__option-link:hover .banner__option-icon {
+	opacity: 0.7;
+}
+.banner__option-link:active .banner__option-icon {
+	opacity: 0.3;
+}
+
+
+// *** END OF HOVERS AND ANOTHER ***
+
+
+@media (min-width: $tablet-width) {	
+	.banner {
+		margin: 0;
+		padding: 0;
+
+		display: flex;
+		width: $tablet-width;
+		height: 745px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+
+		background: url("../img/hero-tablet.jpg") top center no-repeat;
+	}
+
+	.banner__delivery{
+		margin: 0;
+		padding: 0;
+
+		display: block;
+
+		position: absolute;
+		top: 20px;
+		right: 50px;
+
+		text-decoration: none;
+		font-size: 15px;
+		line-height: 24px;
+		font-weight: 500;
+		// text-transform: uppercase;
+		color: #000000;
+	}
+
+	.banner__slogan {
+		margin: 0;
+		padding: 155px 0 0 0;
+
+		// display: flex;
+		width: $tablet-width;
+
+		text-decoration: none;
+		text-align: center;
+		font-size: 43px;
+		line-height: 50px;
+		font-weight: 700;
+		// text-transform: uppercase;
+		color: #000000;
+	}
+
+	.banner__options{
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+
+		width: 668px;
+		height: 120px;
+
+		list-style: none;
+	}
+
+	.banner__option{
+		margin: 0;
+		padding: 0;
+
+		width: 334px;
+		height: auto;
+	}
+
+	.banner__option-link{
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-grow: 1;
+		align-items: center;
+		justify-content: space-between;
+
+		width: auto;
+		height: 120px;
+
+		background-color: #63d1bb;
+
+		text-decoration: none;
+		text-align: center;
+		font-size: 20px;
+		line-height: 30px;
+		font-weight: 700;
+		// text-transform: uppercase;
+		color: #ffffff;
+	}
+
+	.banner__option-name{
+		margin: 0;
+		padding: 0 0 0 35px;
+	}
+
+	.banner__zigzag{
+		margin: 0;
+		padding: 0;
+
+		z-index: 1;
+
+		display: block;
+
+		position: absolute;
+		bottom: 0;
+
+		width: 768px;
+		height: 12px;
+		background: url("../img/zigzag-fill-desktop.png") top center no-repeat;
+		background-size: cover;
+	}
+
+	.banner__option-icon{
+		margin: 0 27px 0 0;
+		padding: 0;
+
+		width: 62px;
+		height: 62px;
+
+		// background: url("../img/toy.png") center center no-repeat;
+		opacity: 0.7;
+		//For hover opacity: 0.3 For Down opacity: 0.3
+	}
+
+	// *** MODS ***
+	.banner__option-link--last {
+		background-color: #56c3b2;
+	}
+	// ** END OF MODS ***
+
+}
+
+@media (min-width: $desktop-width) {
+	.banner {
+		margin: 0 auto;
+		padding: 0;
+
+		display: flex;
+		width: $desktop-width;
+		height: 745px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+
+		background: url("../img/hero-desktop.jpg") top center no-repeat, #f9f9f9;
+	}
+
+	.banner__delivery{
+		margin: 0;
+		padding: 0;
+
+		display: block;
+
+		position: absolute;
+		top: 20px;
+		right: 50px;
+
+		text-decoration: none;
+		font-size: 15px;
+		line-height: 24px;
+		font-weight: 500;
+		// text-transform: uppercase;
+		color: #000000;
+	}
+
+	.banner__slogan {
+		margin: 0;
+		padding: 155px 0 0 0;
+
+		// display: flex;
+		width: $tablet-width;
+
+		text-decoration: none;
+		text-align: center;
+		font-size: 53px;
+		line-height: 57px;
+		font-weight: 700;
+		// text-transform: uppercase;
+		color: #000000;
+	}
+
+	.banner__options{
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+
+		width: 1050px;
+		height: 120px;
+
+		list-style: none;
+	}
+
+	.banner__option{
+		margin: 0;
+		padding: 0;
+
+		width: 334px;
+		height: auto;
+	}
+
+	.banner__option-link{
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-grow: 1;
+		align-items: center;
+		justify-content: space-between;
+
+		width: auto;
+		height: 120px;
+
+		background-color: #63d1bb;
+
+		text-decoration: none;
+		text-align: center;
+		font-size: 20px;
+		line-height: 30px;
+		font-weight: 700;
+		// text-transform: uppercase;
+		color: #ffffff;
+	}
+
+	.banner__option-name{
+		margin: 0;
+		padding: 0 0 0 35px;
+	}
+
+	.banner__zigzag{
+		margin: 0;
+		padding: 0;
+
+		z-index: 1;
+
+		display: block;
+
+		position: absolute;
+		bottom: 0;
+
+		width: $desktop-width;
+		height: 18px;
+		background: url("../img/zigzag-fill-desktop.png") top center no-repeat;
+		background-size: cover;
+	}
+
+	.banner__option-icon{
+		margin: 0 27px 0 0;
+		padding: 0;
+
+		width: 62px;
+		height: 62px;
+
+		// background: url("../img/toy.png") center center no-repeat;
+		opacity: 0.7;
+		//For hover opacity: 0.3 For Down opacity: 0.3
+	}
+
+	// *** MODS ***
+	.banner__option-link--last {
+		background-color: #56c3b2;
+	}
+	// ** END OF MODS ***
+}
